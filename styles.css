@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  margin-top: 10px;
+  padding: 40px 100px;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  color: #fff;
+}
+
+.main {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.main.active {
+  right: 300px;
+}
+
+.main video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #03a9f4;
+  mix-blend-mode: overlay;
+}
+
+.body-text {
+  color: white;
+  z-index: 100;
+}
+
+.body-text h2 {
+  font-size: 4rem;
+}
+
+.body-text h3 {
+  font-size: 2.5rem;
+}
+
+@media screen and (max-width: 500px) {
+  .body-text h2 {
+    font-size: 2rem;
+  }
+  .body-text h3 {
+    font-size: 1.5rem;
+  }
+}
+
+.body-text p {
+  padding-top: 15px;
+  font-size: 1rem;
+  max-width: 60%;
+  margin-bottom: 34px;
+}
+
+.explore-link {
+  text-decoration: none;
+  padding: 10px 30px;
+  background-color: white;
+  color: black;
+  letter-spacing: 2px;
+  transition: 0.2s;
+  margin: 30px 0px;
+}
+
+.explore-link:hover {
+  letter-spacing: 10px;
+  cursor: pointer;
+}
+
+.icons {
+  position: absolute;
+  bottom: 30px;
+}
+
+.icons .logo {
+  padding-right: 20px;
+  font-size: 30px;
+  color: white;
+}
+
+.logo:hover {
+  transform: translateY(-15px);
+  transition: 0.7s;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu ul {
+  position: relative;
+}
+.menu ul li {
+  list-style: none;
+}
+.menu ul li a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #111;
+}
+.menu ul li a:hover {
+  color: #03a9f4;
+}
+
+@media (max-width: 991px) {
+  .main,
+  .main header {
+    padding: 40px;
+  }
+}
+
+.menu-logo {
+  cursor: pointer;
+}
+
+.gg-menu {
+  color: white !important;
+  --ggs: 1.5;
+}
+
+.gg-close {
+  color: white !important;
+  --ggs: 1.5;
+}

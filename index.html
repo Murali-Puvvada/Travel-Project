@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Travel Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Ionicon Icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- css.gg Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/css.gg/icons/all.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="main">
+      <header>
+        <h2 class="header-logo">TRAVEL</h2>
+        <div class="menu-logo">
+          <i onclick="changeIcon(this)" class="gg-menu"></i>
+          <!-- When the icon is clicked call JS to change Icon. -->
+        </div>
+      </header>
+      <video src="./videoplay.mp4" muted loop autoplay></video>
+
+      <div class="body-text">
+        <h2>NEVER STOP</h2>
+        <h3>EXPLORING THE WORLD</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
+          labore velit esse minus, ipsa, necessitatibus itaque harum vitae sequi
+          inventore voluptates suscipit! Eaque quam quia, ullam error reiciendis
+          totam sequi!
+        </p>
+        <a href="#" class="explore-link">EXPLORE</a>
+      </div>
+
+      <div class="icons">
+        <ion-icon class="logo" name="logo-facebook"></ion-icon>
+        <ion-icon class="logo" name="logo-twitter"></ion-icon>
+        <ion-icon class="logo" name="logo-instagram"></ion-icon>
+      </div>
+    </section>
+    <div class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Destination</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
